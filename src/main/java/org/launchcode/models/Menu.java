@@ -21,9 +21,9 @@ public class Menu {
     private String name;
 
     @ManyToMany
-    List<Cheese> cheeses =new ArrayList<>();
+    List<Cheese> cheeses ;
 
-    public void addItem(Cheese item){ }
+    public void addItem(Cheese item){cheeses.add(item); }
 
     public Menu(){}
 
